@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  smm-web:
+    # https://hub.docker.com/r/ubuntu/nginx
+    image: ubuntu/nginx:latest
+    container_name: smm-web
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./:/var/www/html
+    ports:
+      - 8888:80
