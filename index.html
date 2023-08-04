@@ -7,30 +7,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cloud.typenetwork.com/projects/5433/fontface.css" />
-    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/css/orangeline.min.css" />
-    <!-- /CSS -->
 
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/manifest.json">
-    <link rel="mask-icon" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-    <!-- /FAVICONS -->
-
-    <title>The SQL Murder Mystery</title>
+    <title>The EPFL SQL Murder Mystery</title>
     <!-- Meta -->
     <meta name="keywords" content="SQL, databases, game, fun">
-    <meta name="description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
+    <meta name="description"
+        content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
     <!-- /Meta -->
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="SQL Murder Mystery" />
-    <meta property="og:description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths." />
+    <meta property="og:description"
+        content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths." />
     <meta property="og:image" content="http://mystery.knightlab.com/174092-clue-illustration.png" />
     <meta property="og:url" content="http://mystery.knightlab.com" />
     <meta property="og:site_name" content="Knight Lab's SQL Murder Mystery" />
@@ -39,7 +28,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:title" content="Knight Lab's SQL Murder Mystery">
-    <meta name="twitter:description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
+    <meta name="twitter:description"
+        content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
     <meta name="twitter:image" content="http://mystery.knightlab.com/174092-clue-illustration.png">
     <meta name="twitter:site" content="@knightlab">
     <!-- /Twitter Card -->
@@ -58,96 +48,99 @@
         window.onload = () => loadData('sql-murder-mystery.db');
     </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8F4WPDMPL5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8F4WPDMPL5');
-</script>
-    <title>The SQL Murder Mystery</title>
+    <link rel="stylesheet" href="https://web2018.epfl.ch/6.3.0/css/elements.min.css">
+    <script src="https://web2018.epfl.ch/6.3.0/js/elements.min.js"></script>
 </head>
 
 <body>
-    <nav id="navbar-product-top" class="navbar navbar-dark">
-        <ul>
-            <li class="logo">
-                <a href="http://knightlab.com">
-                    <img src="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/knightlab-dark.png" />
-                </a>
-            </li>
-        </ul>
-        <div class="nav-mobile-menu">
-            <button class="button-plain">
-        <span class="icon-menu"></span>
-      </button>
-        </div>
-        <ul class="nav-right navbar-nav">
+    <nav id="nav-aside" class="nav-aside" role="navigation" aria-describedby="nav-aside-title">
+        <header role="banner" class="header">
+            <a class="logo" href="#">
+                <img src="icons/epfl-logo.svg" alt="Logo EPFL, École polytechnique fédérale de Lausanne"
+                    class="img-fluid">
+            </a>
 
-
-            <li><a class="button button-dark button-small-tablet  button-active" href="https://knightlab.northwestern.edu/projects/">Projects</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://studio.knightlab.com/">Studio</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://localnewsinitiative.northwestern.edu/">Local
-          News</a></li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/posts/">Posts</a>
-            </li>
-
-            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/community/">Community</a></li>
-
-        </ul>
+            <ul aria-hidden="true" class="nav-header d-none d-xl-flex">
+                <li id="menu-item-1">
+                    <a class="nav-item" href="https://www.epfl.ch/about/fr/">À propos</a>
+                </li>
+                <li id="menu-item-2" class="current-menu-item">
+                    <a class="nav-item" href="https://www.epfl.ch/education/fr/">Éducation</a>
+                </li>
+                <li id="menu-item-3">
+                    <a class="nav-item" href="https://www.epfl.ch/research/fr/">Recherche</a>
+                </li>
+                <li id="menu-item-4">
+                    <a class="nav-item" href="https://www.epfl.ch/innovation/fr/">Innovation</a>
+                </li>
+                <li id="menu-item-5">
+                    <a class="nav-item" href="https://www.epfl.ch/schools/fr/">Facultés</a>
+                </li>
+                <li id="menu-item-6">
+                    <a class="nav-item" href="https://www.epfl.ch/campus/fr/">Campus</a>
+                </li>
+            </ul>
+        </header>
     </nav>
 
-    <header class="header-product">
-        <h1 class="product-logo product-logo-large">
-            SQL Murder Mystery
-        </h1>
-        <h2 class="product-tagline">Can you find out whodunnit?</h2>
-    </header>
+    <div class="container-full">
+        <div class="hero">
+            <div class="hero-content-container">
+                <h1 class="hero-title">Le mystère SQL de l'EPFL</h1>
+                <div class="hero-content">
+                    There's been a Murder in SQL City! The SQL Murder Mystery is designed to be both a self-directed
+                    lesson to learn SQL concepts and commands and a fun game for experienced SQL users to solve an
+                    intriguing crime.
+                </div>
+            </div>
+            <div class="hero-img">
+                <picture>
+                    <img src="174092-clue-illustration.png" class="img-fluid" alt="Cover description">
+                </picture>
+            </div>
+        </div>
 
+        <div class="introduction bg-gray-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h2>Étudier à l’EPFL</h2>
+                        <p>Treize filières de formation dans les sciences de l’ingénieur, des programmes doctoraux de
+                            choix, des laboratoires de pointe dirigés par des professeurs de réputation internationale,
+                            un campus moderne en plein développement, des liens privilégiés avec l’industrie: l’EPFL
+                            offre des conditions d’études hors du commun aux jeunes qui envisagent d’amorcer une
+                            formation supérieure dans le domaine des sciences et de la technique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="container">
-
-        <div id="intro" class="grid">
-            <div class="grid-item">
-                <img src="174092-clue-illustration.png" class="img-rounded" alt="A decorative illustration of a detective looking at an evidence board.">
-                <p>
-                    There's been a Murder in SQL City! The SQL Murder Mystery is designed to be both a self-directed lesson to learn SQL concepts and commands and a fun game for experienced SQL users to solve an intriguing crime.
-                </p>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="grid-item">
-                <h2>New to SQL?</h2>
-                <p>
-                    This exercise is meant more as a way to practice SQL skills than a full tutorial. If you've never used SQL at all, <a href="walkthrough.html">try the walkthrough</a>. If you really want to learn a lot about SQL, you may prefer a complete
-                    tutorial like <a href="https://selectstarsql.com/">Select Star SQL.</a>
-
-                </p>
-                <p>If you're comfortable with SQL, you can <a href="#experienced">dive in below</a>!</p>
-            </div>
-        </div>
-
 
         <div class="grid">
             <div class="grid-item">
                 <h2 id="experienced">Experienced SQL sleuths start here</h2>
                 <p>
-                    A crime has taken place and the detective needs your help. The detective gave you the crime scene report, but you somehow lost it. You vaguely remember that the crime was a <strong>​murder​</strong> that occurred sometime on ​<strong>Jan.15, 2018​</strong>                    and that it took place in ​<strong>SQL City​</strong>. Start by retrieving the corresponding crime scene report from the police department’s database.
+                    A crime has taken place and the detective needs your help. The detective gave you the crime scene
+                    report, but you somehow lost it. You vaguely remember that the crime was a <strong>​murder​</strong>
+                    that occurred sometime on ​<strong>Jan.15, 2018​</strong> and that it took place in ​<strong>SQL
+                        City​</strong>. Start by retrieving the corresponding crime scene report from the police
+                    department’s database.
                 </p>
 
                 <h3>Exploring the Database Structure</h3>
 
                 <p>
-                    Experienced SQL users can often use database queries to infer the structure of a database. But each database system has different ways of managing this information. The SQL Murder Mystery is built using SQLite. Use this SQL command to find the tables
+                    Experienced SQL users can often use database queries to infer the structure of a database. But each
+                    database system has different ways of managing this information. The SQL Murder Mystery is built
+                    using SQLite. Use this SQL command to find the tables
                     in the Murder Mystery database.
                 </p>
 
-                <sql-exercise data-question="Run this query to find the names of the tables in this database." data-comment="This command is specific to SQLite. For other databases, you'll have to learn their specific syntax." data-default-text="SELECT name 
+                <sql-exercise data-question="Run this query to find the names of the tables in this database."
+                    data-comment="This command is specific to SQLite. For other databases, you'll have to learn their specific syntax."
+                    data-default-text="SELECT name 
   FROM sqlite_master
  where type = 'table'"></sql-exercise>
 
@@ -157,10 +150,13 @@
         <div class="grid">
             <div class="grid-item">
                 <p>
-                    Besides knowing the table names, you need to know how each table is structured. The way this works is also dependent upon which database technology you use. Here's how you do it with SQLite.
+                    Besides knowing the table names, you need to know how each table is structured. The way this works
+                    is also dependent upon which database technology you use. Here's how you do it with SQLite.
                 </p>
 
-                <sql-exercise data-question="Run this query to find the structure of the `crime_scene_report` table" data-comment="Change the value of 'name' to see the structure of the other tables you learned about with the previous query." data-default-text="SELECT sql 
+                <sql-exercise data-question="Run this query to find the structure of the `crime_scene_report` table"
+                    data-comment="Change the value of 'name' to see the structure of the other tables you learned about with the previous query."
+                    data-default-text="SELECT sql 
   FROM sqlite_master
  where name = 'crime_scene_report'"></sql-exercise>
 
@@ -182,7 +178,9 @@
                     And you can always go to the <a href="walkthrough.html">walkthrough</a>.
                 </p>
 
-                <sql-exercise data-question="Use your knowledge of the database schema and SQL commands to find out who committed the murder." data-comment="When you think you know the answer, go to the next section." data-default-text="
+                <sql-exercise
+                    data-question="Use your knowledge of the database schema and SQL commands to find out who committed the murder."
+                    data-comment="When you think you know the answer, go to the next section." data-default-text="
               
               
 
@@ -205,84 +203,122 @@
         <div id="credits" class="grid">
             <div class="grid-item">
                 <h3>Credits</h3>
-                <p>The SQL Murder Mystery was created by <a href="https://twitter.com/joonparkmusic">Joon Park</a> and <a href="https://twitter.com/Cathy_MeiyingHe">Cathy He</a> while they were Knight Lab fellows. See the <a href="https://github.com/NUKnightLab/sql-mysteries">GitHub repository</a>                    for more information.</p>
+                <p>The SQL Murder Mystery was created by <a href="https://twitter.com/joonparkmusic">Joon Park</a> and
+                    <a href="https://twitter.com/Cathy_MeiyingHe">Cathy He</a> while they were Knight Lab fellows. See
+                    the <a href="https://github.com/NUKnightLab/sql-mysteries">GitHub repository</a> for more
+                    information.
+                </p>
                 <p>Adapted and produced for the web by <a href="https://twitter.com/joegermuska">Joe Germuska</a>.</p>
-                <p>This mystery was inspired by <a href="https://github.com/veltman/clmystery">a crime in the neighboring
-            Terminal City.</a></p>
+                <p>This mystery was inspired by <a href="https://github.com/veltman/clmystery">a crime in the
+                        neighboring
+                        Terminal City.</a></p>
                 <p>Web-based SQL is made possible by <a href="https://github.com/sql-js/sql.js/">SQL.js</a></p>
-                <p>SQL query custom web components created and released to the public domain by Zi Chong Kao, creator of <a href="https://selectstarsql.com/">Select Star SQL.</a></p>
+                <p>SQL query custom web components created and released to the public domain by Zi Chong Kao, creator of
+                    <a href="https://selectstarsql.com/">Select Star SQL.</a>
+                </p>
                 <p>Detective illustration courtesy of <a href="https://www.vecteezy.com/">Vectors by Vecteezy</a></p>
-                <p>Original code for this project is released under the <a href="https://github.com/NUKnightLab/sql-mysteries/blob/master/LICENSE">MIT License</a></p>
-                <p>Original text and other content for this project is released under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons CC BY-SA 4.0</a></p>
+                <p>Original code for this project is released under the <a
+                        href="https://github.com/NUKnightLab/sql-mysteries/blob/master/LICENSE">MIT License</a></p>
+                <p>Original text and other content for this project is released under <a
+                        href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons CC BY-SA 4.0</a></p>
             </div>
         </div>
     </div>
 
-    <footer class="footer-knightlab--dark">
-        <div class="container">
-            <div class='grid grid-center'>
-                <div class='column-2 column-4-phone column-4-tablet'>
-                    <a href="http://knightlab.northwestern.edu" target="_blank">
-                        <img src="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/logo-knightlab-stacked-dark-small.png" style="margin-left:auto;">
-                    </a>
-                    <ul class="list--social text-align-center">
-                        <li><a class="link--no-style" href="http://www.twitter.com/knightlab" target="_blank" title="Knight Lab on Twitter"><span class="icon-twitter"></span></a></li>
-                        <li><a class="link--no-style" href="https://www.facebook.com/knightlab" target="_blank" title="Knight Lab on Facebook"><span class="icon-facebook"></span></a></li>
-                        <li><a class="link--no-style" href="https://github.com/NUKnightLab/" target="_blank" title="Knight Lab on GitHub"><span class="icon-github"></span></a></li>
+    <footer class="footer-light" role="contentinfo">
+        <div class="row">
+            <div class="col-6 mx-auto mx-md-0 mb-4 col-md-3 col-lg-2">
+                <a href="#">
+                    <img src="icons/epfl-logo.svg" alt="Logo EPFL, École polytechnique fédérale de Lausanne"
+                        class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-9 col-lg-10 mb-4">
+                <div class="ml-md-2 ml-lg-5">
+                    <ul class="list-inline list-unstyled">
+                        <li class="list-inline-item">Contact</li>
+                        <li class="list-inline-item text-muted pl-3"><small>EPFL CH-1015 Lausanne</small></li>
+                        <li class="list-inline-item text-muted pl-3"><small>+41 21 693 11 11</small></li>
                     </ul>
-                </div>
-                <div class='column-4 column-5-tablet column-6-phone footer-description'>
-                    <p>
-                        The <a title="Northwestern University" href="http://www.northwestern.edu/" target="_blank">Northwestern
-              University</a> Knight Lab is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.
-                    </p>
-                    <div class="grid-size-2 grid-size-2-phone">
-                        <div class="grid-item">
-                            <a title="Medill School of Journalism, Media, Integrated Marketing Communications" href="http://www.medill.northwestern.edu/" target="_blank">
-                                <img src="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/logo-medill-dark.png">
-                            </a>
+                    <div class="footer-light-socials">
+                        <p class="footer-title footer-title-no-underline">Suivez l'EPFL sur les réseaux sociaux</p>
+                        <ul class="social-icon-list list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/epflcampus"
+                                    class="social-icon social-icon-facebook social-icon-negative" target="_blank"
+                                    rel="nofollow noopener">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                    <span class="sr-only">Follow us on Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/epfl_en"
+                                    class="social-icon social-icon-twitter social-icon-negative" target="_blank"
+                                    rel="nofollow noopener">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-twitter"></use>
+                                    </svg>
+                                    <span class="sr-only">Follow us on Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com/epflcampus"
+                                    class="social-icon social-icon-instagram social-icon-negative" target="_blank"
+                                    rel="nofollow noopener">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-instagram"></use>
+                                    </svg>
+                                    <span class="sr-only">Follow us on Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/epflnews"
+                                    class="social-icon social-icon-youtube social-icon-negative" target="_blank"
+                                    rel="nofollow noopener">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-youtube"></use>
+                                    </svg>
+                                    <span class="sr-only">Follow us on Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-legal">
+                        <div class="footer-legal-links">
+                            <a
+                                href="https://www.epfl.ch/about/overview/fr/reglements-et-directives/mentions-legales/">Accessibilité</a>
+                            <a href="https://www.epfl.ch/about/overview/fr/reglements-et-directives/mentions-legales/">Mentions
+                                légales</a>
+                            <a href="https://go.epfl.ch/protection-des-donnees/">Protection des données</a>
                         </div>
-
-                        <div class="grid-item">
-                            <a title="McCormick School of Engineering" href="http://www.mccormick.northwestern.edu/" target="_blank">
-                                <img src="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/logo-mccormick-dark.png">
-                            </a>
+                        <div>
+                            <p>&copy; 2021 EPFL, tous droits réservés</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-center">
-                <div class="grid-item">
-                    <address itemscope="" itemtype="http://data-vocabulary.org/Organization">
-            <span style="display:none;" itemprop="name"
-              title="Knight Lab | Advancing news media innovation through exploration and experimentation."
-              class="address-name">Knight Lab</span>
-            <span itemprop="tel" class="tel">(847) 467-4971</span>
-            <span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="address">
-              <span itemprop="street-address" class="street-address">1845 Sheridan Road</span>
-              <span class="room-num">Fisk #109 &amp; #111</span>
-              <div class="address-group">
-                <span itemprop="locality">Evanston,</span> <span itemprop="region">IL</span> <span
-                  itemprop="postal-code">60208 </span>
-                <span style="display:none;" itemprop="geo" itemscope="" itemtype="http://www.data-vocabulary.org/Geo/"
-                  class="geo">
-                  Latitude: <span itemprop="latitude">42.056893</span><br>Longitude:
-                  <span itemprop="longitude">-87.676735</span>
-                </span>
-                <a style="display:none;" href="http://knightlab.northwestern.edu" itemprop="url" class="url">Northwesten
-                  University Knight Lab | Advancing media innovation through exploration and experimentation.</a>
-              </div>
-            </span>
-          </address>
-                    <span class="copyright">© Copyright 2019 Northwestern University</span>
-                </div>
-            </div>
         </div>
+
     </footer>
+
+
+    <button id="back-to-top" class="btn btn-primary btn-back-to-top">
+
+        <span class="sr-only">Back to top</span>
+
+        <svg class="icon" aria-hidden="true">
+
+            <use xlink:href="#icon-chevron-top"></use>
+
+        </svg>
+
+    </button>
 
     <script src="https://cdn.knightlab.com/libs/orangeline/0.1.1/js/orangeline.js"></script>
     <script type="text/javascript">
-        document.querySelector('#show-schema').addEventListener('click', function() {
+        document.querySelector('#show-schema').addEventListener('click', function () {
             document.querySelector('#experienced-schema').classList.add('show');
         })
     </script>
