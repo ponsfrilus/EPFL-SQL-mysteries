@@ -132,3 +132,12 @@ sql-exercise .sqlExInputArea input {
 #experienced-schema.show {
     display: block;
 }
+
+.blockquote-no-quote p:before {
+  content: '';
+  padding-right: 0;
+}
+.blockquote-no-quote p:after {
+  content: '';
+  padding-left: 0;
+}
