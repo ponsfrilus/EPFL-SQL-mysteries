@@ -251,8 +251,8 @@ class sqlExercise extends HTMLElement {
     editor.setSize('100%', 'auto');
     editor.refresh();
 
-    var runButton = `<input class="btn btn-primary sql-exercise-submit" type="submit" value="Run &#x21e9;" disabled>`;
-    inputArea.insertAdjacentHTML("beforeend", runButton);
+    var runButton = `<input class="btn btn-primary sql-exercise-submit" type="submit" value="Exécuter &#x21e9;" disabled>`;
+    inputArea.insertAdjacentHTML('beforeend', runButton);
 
     form['onsubmit'] = (e) => {
       e && e.preventDefault();
@@ -315,8 +315,8 @@ class sqlExercise extends HTMLElement {
 
     var resetButton = document.createElement('input');
     resetButton.type = 'button';
-    resetButton.value = 'Reset';
     resetButton.className = 'btn btn-primary'
+    resetButton.value = 'Réinitialiser ↻';
     resetButton.onclick = (e) => {
       editor.setValue(defaultText);
       outputBox.textContent = '';
