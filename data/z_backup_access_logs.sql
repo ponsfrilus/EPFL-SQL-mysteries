@@ -4,5 +4,7 @@ CREATE TABLE "z_backup_access_logs" (
 	"id_person"	INTEGER,
 	"id_location"	INTEGER,
 	"date"	TEXT,
-	PRIMARY KEY("id" AUTOINCREMENT)
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY(id_person) REFERENCES people(id),
+	FOREIGN KEY(id_location) REFERENCES location(id)
 );
