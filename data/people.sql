@@ -1,4 +1,13 @@
 DELETE FROM "main"."people";
+CREATE TABLE "people" (
+	"id"	INTEGER NOT NULL,
+	"gender"	NUMERIC,
+	"firstname"	TEXT,
+	"lastname"	TEXT,
+	"email"	TEXT,
+	"birth_date"	TEXT,
+	PRIMARY KEY("id")
+)
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("131989","0","Auboisdormant","Abel","auboisdormant@outlook.com","2000-07-11");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132008","0","Troijours","Adam","adam_troijours@tvtmail.ch","2004-03-10");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132167","1","Kepoura","Adrienne","adrienne.kepoura@gmail.com","1998-04-11");
@@ -52,6 +61,7 @@ INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132573","0","Issime","Gérard","gfroid@icloud.com","2004-04-30");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132582","0","Mendufric","Gérard","gerard.mendufric@icloud.com","2006-01-11");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132577","0","Menvuça","Gerard","g.menvuca@participant.semochablais.ch","2004-05-12");
+INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("107537","0","Metterli","Vartin","v.metterli@epfl.ch.ch","1957-10-04");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132555","1","Porée","Eva","evo.poree@gmail.com","1975-10-04");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132581","0","Don De Course","Guy","guidon@sunrise.ch","2006-04-02");
 INSERT INTO "main"."people"("id","gender","lastname","firstname","email","birth_date") VALUES ("132610","0","Tar","Guy","guibson@cogl.edu","2006-04-30");
