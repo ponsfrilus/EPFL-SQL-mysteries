@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS "main"."calendar";
+DROP TABLE IF EXISTS "calendar";
 CREATE TABLE "calendar" (
 	"id"	INTEGER,
 	"type"	TEXT,

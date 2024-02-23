@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS "main"."location";
+DROP TABLE IF EXISTS "location";
 CREATE TABLE "location" (
 	"id"	INTEGER NOT NULL,
 	"building"	TEXT,

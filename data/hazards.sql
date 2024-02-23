@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS "main"."hazards";
+DROP TABLE IF EXISTS "hazards";
 CREATE TABLE "hazards" (
 	"id"	INTEGER,
 	"id_location"	INTEGER,

@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS "main"."access_logs";
+DROP TABLE IF EXISTS "access_logs";
 CREATE TABLE "access_logs" (
 	"id"	INTEGER NOT NULL,
 	"id_person"	INTEGER,
