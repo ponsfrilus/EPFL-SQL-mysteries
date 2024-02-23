@@ -1,4 +1,4 @@
-DELETE FROM "main"."people";
+DROP TABLE IF EXISTS "main"."people";
 CREATE TABLE "people" (
 	"id"	INTEGER NOT NULL,
 	"gender"	NUMERIC,
