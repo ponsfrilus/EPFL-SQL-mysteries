@@ -1,3 +1,5 @@
+BEGIN;
+
 DROP TABLE IF EXISTS "location";
 CREATE TABLE "location" (
 	"id"	INTEGER NOT NULL,
@@ -6,8 +8,6 @@ CREATE TABLE "location" (
 	"room"	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-
-BEGIN;
 
 INSERT INTO location(building,floor,room) VALUES ('AAB','0','AAB 0 01');
 INSERT INTO location(building,floor,room) VALUES ('AAB','0','AAB 0 02');
