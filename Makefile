@@ -4,6 +4,10 @@ SQLFILES=$(wildcard data/*.sql)
 debug:
 	echo $(SQLFILES)
 
+clean:
+	rm -rf /tmp/noise.sql
+	rm -rf sql-murder-mystery.db
+
 all: sql-murder-mystery.db
 
 sql-murder-mystery.db: $(SQLFILES) /tmp/noise.sql
