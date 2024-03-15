@@ -1,0 +1,37 @@
+name: Build SQLiteDB and deploy on GH pages
+
+on:
+  push:
+    branches: [ "epfl-smm" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Rebuild the DB
+        run: |
+          echo "Creating the DB"
+          make all
+          rm -rf .git .github data .dockerignore docker-compose.yml noise.rb nginx.conf
+          sed  -i 's/<\/body>/<!-- Git hash: ${{ github.sha }} -->\n<\/body>/' index.html
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
