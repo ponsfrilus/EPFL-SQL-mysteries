@@ -7,6 +7,8 @@ CREATE TABLE "location" (
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
+BEGIN;
+
 INSERT INTO location(building,floor,room) VALUES ('AAB','0','AAB 0 01');
 INSERT INTO location(building,floor,room) VALUES ('AAB','0','AAB 0 02');
 INSERT INTO location(building,floor,room) VALUES ('AAB','0','AAB 0 03');
@@ -19544,3 +19546,5 @@ INSERT INTO location(building,floor,room) VALUES ('ZD','-1','ZD G-1 43');
 INSERT INTO location(building,floor,room) VALUES ('ZP','0','ZP 0 DEM');
 INSERT INTO location(building,floor,room) VALUES ('ZP','0','ZP 0 HL');
 INSERT INTO location(building,floor,room) VALUES ('ZP','0','ZP 0 SH');
+
+COMMIT;
