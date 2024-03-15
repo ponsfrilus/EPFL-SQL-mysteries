@@ -195,7 +195,6 @@ NHAZ.times do |i|
 	description=[lorem(5),name,lorem(3),name,lorem(6)].join(" ")
 	puts """
 	  INSERT INTO hazards (id, id_location, class, name, description) 
-	  VALUES (#{i}, #{iloc} '#{klass}', '#{name}', '#{description}');
+	  VALUES (#{i}, #{iloc}, '#{klass}', '#{name}', '#{description}');
   """
 end
-
