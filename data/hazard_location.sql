@@ -5,7 +5,7 @@ CREATE TABLE "hazard_locations" (
 
   PRIMARY KEY("id_location","id_hazard")
   FOREIGN KEY(id_location) REFERENCES location(id)
-  FOREIGN KEY(id) REFERENCES hazards(id)
+  FOREIGN KEY(id_hazard) REFERENCES hazards(id)
 );
 
 INSERT INTO hazard_locations(id_location, id_hazard) VALUES (ABS(RANDOM() %19000), ABS(RANDOM() %10));
